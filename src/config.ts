@@ -41,3 +41,67 @@ export const articles = [
 ]
 
 export const articleSubText = `All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.`
+
+export const appImages = {
+  photos: {
+    image1: {
+      src: 'https://i.imgur.com/QLWdkGQ.png',
+      alt: 'Charles Nwankwo on a hill',
+    },
+    image2: {
+      src: 'https://i.imgur.com/PwvkFjt.png',
+      alt: 'Charles Nwanko at a party',
+    },
+    image3: {
+      src: 'https://i.imgur.com/FODzCTq.png',
+      alt: 'Charles Nwankwo convocation picture',
+    },
+    image4: {
+      src: 'https://i.imgur.com/T8NmqxD.png',
+      alt: 'Charles Nwankwo at a reunion',
+    },
+    image5: {
+      src: 'https://i.imgur.com/g8JCygB.png',
+      alt: 'Charles Nwankwo at an NYSC camp',
+    },
+    avatar: {
+      src: 'https://i.imgur.com/41OApzE.png',
+      alt: 'Charles Nwankwo',
+    },
+    potrait: {
+      src: 'https://i.imgur.com/QfPwDuv.png',
+      alt: 'Charles Nwankwo',
+    },
+  },
+
+  icons: {
+    haulr: {
+      src: 'https://i.imgur.com/KyY87fQ.png',
+      alt: 'Haulr',
+    },
+    onboarder: {
+      src: 'https://i.imgur.com/DdzSZCJ.png',
+      alt: 'Onboarder',
+    },
+    reeddi: {
+      src: 'https://i.imgur.com/LZozymy.png',
+      alt: 'Reeddi',
+    },
+    tribunals: {
+      src: 'https://i.imgur.com/EEIqidv.png',
+      alt: 'Tribunals',
+    },
+    alphaday: {
+      src: 'https://i.imgur.com/IhzmkkH.png',
+      alt: 'Alphaday',
+    },
+    gosi: {
+      src: 'https://i.imgur.com/deCnjHr.png',
+      alt: 'Gosi',
+    },
+    photor: {
+      src: 'https://i.imgur.com/se97BkS.png',
+      alt: 'Photor',
+    },
+  },
+}

@@ -9,7 +9,10 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import avatarImage from '@/images/avatar.jpg'
+import { appImages } from '@/config'
+// import avatarImage from '@/images/avatar.jpg'
+
+const avatarImage = appImages.photos.potrait
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -247,8 +250,10 @@ function Avatar({
       {...props}
     >
       <Image
-        src={avatarImage}
-        alt=""
+        width={512}
+        height={512}
+        src={avatarImage.src}
+        alt={avatarImage.alt}
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
           'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',

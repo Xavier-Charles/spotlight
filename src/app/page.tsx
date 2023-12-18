@@ -7,21 +7,15 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import logoHaulr from '@/images/logos/haulr.jpg'
-import logoAlphaday from '@/images/logos/alphaday.svg'
-import logoReeddi from '@/images/logos/reeddi.png'
-import image1 from '@/images/photos/image-1.jpeg'
-import image2 from '@/images/photos/image-2.jpeg'
-import image3 from '@/images/photos/image-3.jpeg'
-import image4 from '@/images/photos/image-4.jpeg'
-import image5 from '@/images/photos/image-5.jpeg'
+// import logoHaulr from '@/images/logos/haulr.jpg'
+// import logoAlphaday from '@/images/logos/alphaday.svg'
+// import logoReeddi from '@/images/logos/reeddi.png'
 import { type ArticleWithLink } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
-import { articles, profileDetails, socialLinks } from '@/config'
+import { appImages, articles, profileDetails, socialLinks } from '@/config'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -160,6 +154,8 @@ function Role({ role }: { role: Role }) {
     <li className="flex gap-4">
       <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
         <Image
+          width={50}
+          height={50}
           src={role.logo}
           alt=""
           className="h-7 w-7 rounded-full"
@@ -189,6 +185,8 @@ function Role({ role }: { role: Role }) {
   )
 }
 
+const {icons} =  appImages
+
 function Resume() {
   const resumeLink =
     'https://drive.google.com/file/d/1EYVbbH-a073E_6OmZm24BDlrXN044Bme/view?usp=sharing'
@@ -196,7 +194,7 @@ function Resume() {
     {
       company: 'Alphaday',
       title: 'Software Engineer',
-      logo: logoAlphaday,
+      logo: icons.alphaday.src,
       start: '2021',
       end: {
         label: 'Present',
@@ -206,14 +204,14 @@ function Resume() {
     {
       company: 'Reeddi',
       title: 'Fullstack Developer',
-      logo: logoReeddi,
+      logo: icons.reeddi.src,
       start: '2021',
       end: '2021',
     },
     {
       company: 'Haulr',
       title: 'Frontend Developer',
-      logo: logoHaulr,
+      logo: icons.haulr.src,
       start: '2020',
       end: '2021',
     },
@@ -243,12 +241,13 @@ function Resume() {
   )
 }
 
+const {photos} = appImages
  const images = [
-   { image: image1, rotaion: 'rotate-2' },
-   { image: image2, rotaion: '-rotate-2' },
-   { image: image3, rotaion: 'rotate-2', imgClasses: 'object-top' },
-   { image: image4, rotaion: 'rotate-2', imgClasses: 'object-bottom' },
-   { image: image5, rotaion: '-rotate-2', imgClasses: 'object-top' },
+   { image: photos.image1, rotaion: 'rotate-2' },
+   { image: photos.image2, rotaion: '-rotate-2' },
+   { image: photos.image3, rotaion: 'rotate-2', imgClasses: 'object-top' },
+   { image: photos.image4, rotaion: 'rotate-2', imgClasses: 'object-bottom' },
+   { image: photos.image5, rotaion: '-rotate-2', imgClasses: 'object-top' },
  ]
 
 function Photos() {
@@ -264,8 +263,10 @@ function Photos() {
             )}
           >
             <Image
-              src={image}
-              alt=""
+              width={1000}
+              height={1000}
+              src={image.src}
+              alt={image.alt}
               sizes="(min-width: 640px) 18rem, 11rem"
               className={clsx(
                 'absolute inset-0 h-full w-full object-cover',

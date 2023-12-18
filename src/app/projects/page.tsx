@@ -3,10 +3,13 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoOnboarder from '@/images/logos/onboarder.png'
-import logoGosi from '@/images/logos/gosi.svg'
-import logoPhotor from '@/images/logos/photor.webp'
-import logoTribunals from '@/images/logos/tribunals.png'
+import { appImages } from '@/config'
+// import logoOnboarder from '@/images/logos/onboarder.png'
+// import logoGosi from '@/images/logos/gosi.svg'
+// import logoPhotor from '@/images/logos/photor.webp'
+// import logoTribunals from '@/images/logos/tribunals.png'
+
+const { icons } = appImages
 
 const projects = [
   {
@@ -16,28 +19,28 @@ const projects = [
       href: 'https://tribunals.vercel.app/',
       label: 'tribunals.vercel.app',
     },
-    logo: logoTribunals,
+    logo: icons.tribunals.src,
   },
   {
     name: 'Gosi',
     description:
       'A platform providing socioeconomic data on Nigeria, with an interactive map for easy exploration.',
     link: { href: 'https://gosi.app/', label: 'gosi.app' },
-    logo: logoGosi,
+    logo: icons.gosi.src,
   },
   {
     name: 'Onboarder',
     description:
       'A streamlined Web3 education with fun tutorials, weekly prizes, and unique NFT rewards for developers.',
     link: { href: 'https://onboarder-seven.vercel.app', label: 'github.com' },
-    logo: logoOnboarder,
+    logo: icons.onboarder.src,
   },
   {
     name: 'Photor',
     description:
       'A global platform showcasing stunning photography from talented photogrphers.',
     link: { href: 'http://photor.gallery', label: 'photor.gallery' },
-    logo: logoPhotor,
+    logo: icons.photor.src,
   },
 ]
 
@@ -71,6 +74,8 @@ export default function Projects() {
           <Card as="li" key={project.name}>
             <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image
+                width={50}
+                height={50}
                 src={project.logo}
                 alt=""
                 className="h-8 w-8"
