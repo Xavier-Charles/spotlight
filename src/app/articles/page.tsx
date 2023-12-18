@@ -2,7 +2,7 @@ import { type Metadata } from 'next'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import { type ArticleWithSlug, getAllArticles, ArticleWithLink } from '@/lib/articles'
+import { type ArticleWithLink } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import { articles } from '@/config'
 
