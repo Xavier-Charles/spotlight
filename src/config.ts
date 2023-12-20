@@ -50,7 +50,7 @@ export const appImages = {
     },
     image2: {
       src: 'https://i.imgur.com/PwvkFjt.png',
-      alt: 'Charles Nwanko at a party',
+      alt: 'Charles Nwankwo at a party',
     },
     image3: {
       src: 'https://i.imgur.com/FODzCTq.png',
