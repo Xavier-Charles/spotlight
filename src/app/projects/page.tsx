@@ -4,10 +4,7 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { appImages } from '@/config'
-// import logoOnboarder from '@/images/logos/onboarder.png'
-// import logoGosi from '@/images/logos/gosi.svg'
-// import logoPhotor from '@/images/logos/photor.webp'
-// import logoTribunals from '@/images/logos/tribunals.png'
+
 
 const { icons } = appImages
 
