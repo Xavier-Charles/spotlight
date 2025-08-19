@@ -180,7 +180,7 @@ const { icons } = appImages
 
 function Resume() {
   const resumeLink =
-    'https://drive.google.com/file/d/1EYVbbH-a073E_6OmZm24BDlrXN044Bme/view?usp=sharing'
+    'https://docs.google.com/document/d/1HV1fg3tQiHaeeDh2oT2U2RowygOjP_FKuoByFPAlt_4/edit?usp=sharing'
   let resume: Array<Role> = [
     {
       company: 'Alphaday',
