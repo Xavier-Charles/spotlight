@@ -5,11 +5,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  LinkedInIcon,
-  TwitterIcon,
-} from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon, TwitterIcon } from '@/components/SocialIcons'
 // import logoHaulr from '@/images/logos/haulr.jpg'
 // import logoAlphaday from '@/images/logos/alphaday.svg'
 // import logoReeddi from '@/images/logos/reeddi.png'
@@ -185,7 +181,7 @@ function Role({ role }: { role: Role }) {
   )
 }
 
-const {icons} =  appImages
+const { icons } = appImages
 
 function Resume() {
   const resumeLink =
@@ -241,14 +237,14 @@ function Resume() {
   )
 }
 
-const {photos} = appImages
- const images = [
-   { image: photos.image1, rotaion: 'rotate-2' },
-   { image: photos.image2, rotaion: '-rotate-2' },
-   { image: photos.image3, rotaion: 'rotate-2', imgClasses: 'object-top' },
-   { image: photos.image4, rotaion: 'rotate-2', imgClasses: 'object-bottom' },
-   { image: photos.image5, rotaion: '-rotate-2', imgClasses: 'object-top' },
- ]
+const { photos } = appImages
+const images = [
+  { image: photos.image1, rotaion: 'rotate-2' },
+  { image: photos.image2, rotaion: '-rotate-2' },
+  { image: photos.image3, rotaion: 'rotate-2', imgClasses: 'object-top' },
+  { image: photos.image4, rotaion: 'rotate-2', imgClasses: 'object-bottom' },
+  { image: photos.image5, rotaion: '-rotate-2', imgClasses: 'object-top' },
+]
 
 function Photos() {
   return (
@@ -288,12 +284,12 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software Engineer, and amateur UX Designer.
+            Software Engineer, and Novice UI Designer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m {profileDetails.firstName}, a software engineer based in Nigeria. I love building
-            delightful user interfaces and digital experiences that empower
-            regular people do more.
+            I’m {profileDetails.firstName}, and I love building delightful user
+            interfaces and digital experiences that empower everyday people do
+            more.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
