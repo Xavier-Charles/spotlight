@@ -13,6 +13,26 @@ const { icons } = appImages
 
 const projects = [
   {
+    name: 'Testprepper',
+    description:
+      'An AI-powered test preparation platform for IELTS and CELPIP exams.',
+    link: {
+      href: 'https://testprepper.academy/',
+      label: 'testprepper.academy',
+    },
+    logo: icons.testprepper.src,
+  },
+  {
+    name: 'SMO Careers',
+    description:
+      'A website for SMO Careers, a hiring platform for SMO companies.',
+    link: {
+      href: 'https://smocareers.com/',
+      label: 'smocareers.com',
+    },
+    logo: icons.smoCareers.src,
+  },
+  {
     name: 'Tribunals',
     description: 'A decentralized NFT-based voting system for DAOs.',
     link: {

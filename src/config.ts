@@ -115,6 +115,14 @@ export const appImages = {
   },
 
   icons: {
+    testprepper: {
+      src: 'https://i.imgur.com/4xhseyx.png',
+      alt: 'Testprepper',
+    },
+    smoCareers: {
+      src: 'https://i.imgur.com/uHfzEt8.png',
+      alt: 'SMO Careers',
+    },
     haulr: {
       src: 'https://i.imgur.com/KyY87fQ.png',
       alt: 'Haulr',
