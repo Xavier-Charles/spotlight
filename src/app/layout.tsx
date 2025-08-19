@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: `%s - ${profileDetails.name}`,
     default: `${profileDetails.name} - Software designer, founder, and amateur astronaut`,
   },
-  description: `I’m ${profileDetails.firstName}, a software engineer based in Nigeria. I love building delightful user interfaces and digital experiences that empower regular people do more.`,
+  description: `I’m ${profileDetails.firstName} and I love building delightful user interfaces and digital experiences that empower regular people do more.`,
   alternates: {
     types: {
       'application/rss+xml': `${profileDetails.url}/feed.xml`,
