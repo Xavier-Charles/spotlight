@@ -6,9 +6,6 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon, TwitterIcon } from '@/components/SocialIcons'
-// import logoHaulr from '@/images/logos/haulr.jpg'
-// import logoAlphaday from '@/images/logos/alphaday.svg'
-// import logoReeddi from '@/images/logos/reeddi.png'
 import { type ArticleWithLink } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import { appImages, articles, profileDetails, socialLinks } from '@/config'
@@ -75,9 +72,7 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 function Article({ article }: { article: ArticleWithLink }) {
   return (
     <Card as="article">
-      <Card.Title href={`/articles/${article.link}`}>
-        {article.title}
-      </Card.Title>
+      <Card.Title href={article.link}>{article.title}</Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
         {formatDate(article.date)}
       </Card.Eyebrow>
