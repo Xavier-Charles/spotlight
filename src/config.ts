@@ -23,6 +23,46 @@ export const profileDetails = {
 
 export const articles = [
   {
+    title: 'Is your “mobile-first” design leaving money on the table?',
+    description:
+      'Mobile-first design is a common practice, but it can leave money on the table. Let’s explore why.',
+    date: '2024-10-03',
+    link: 'https://www.linkedin.com/pulse/your-mobile-first-design-leaving-money-table-charles-nwankwo-gqktc/',
+    author: 'Charles Nwankwo',
+  },
+  {
+    title: 'How a Button Can Kill Your SaaS Business',
+    description:
+      'A button can be the difference between a successful SaaS business and a failed one. Let’s explore how.',
+    date: '2024-05-02',
+    link: 'https://www.linkedin.com/pulse/how-button-can-kill-your-saas-business-charles-nwankwo-in6zf/',
+    author: 'Charles Nwankwo',
+  },
+  {
+    title: "Redesigning for the Future: A Frontend Developer's Journey",
+    description:
+      "A frontend developer's journey of redesigning a SaaS product to be more future-proof.",
+    date: '2024-02-27',
+    link: 'https://www.linkedin.com/pulse/redesigning-future-frontend-developers-journey-charles-nwankwo-r3tif/',
+    author: 'Charles Nwankwo',
+  },
+  {
+    title: 'Creating beautiful colour palettes',
+    description:
+      'A guide to creating beautiful colour palettes for your designs.',
+    date: '2024-01-24',
+    link: 'https://www.linkedin.com/pulse/creating-beautiful-colour-palettes-charles-nwankwo-32jcf/',
+    author: 'Charles Nwankwo',
+  },
+  {
+    title: 'Mastering Design Patterns of software development',
+    description:
+      'A guide to mastering design patterns of software development.',
+    date: '2023-12-05',
+    link: 'https://www.linkedin.com/pulse/mastering-design-patterns-software-development-charles-nwankwo-zi0kf/',
+    author: 'Charles Nwankwo',
+  },
+  {
     title: 'Becoming a Senior Engineer',
     description:
       'A guide to the skills and mindsets you need to level up as an engineer.',
